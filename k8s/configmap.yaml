@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ecommerce-backend-config
+  namespace: ecommerce
+data:
+  PORT: "3000"
+  NODE_ENV: "production"
+  SEED_DATA: "true"
+  TAX_RATE: "0.0825"
+  # $25,000.00 freight surcharge, in cents
+  SHIPPING_CENTS: "2500000"
